@@ -1,8 +1,8 @@
 function moveBoy(e){
-
+    
     let boy = document.getElementById("boy");
     let circle = document.getElementById("circle");
-
+    
     let cs = window.getComputedStyle(circle);
 
     let left = parseInt(cs.marginLeft);
@@ -13,11 +13,9 @@ function moveBoy(e){
     let bottomArray = [[7,91],[7,161],[7,231],[77,231],[147,91],[217,161],[217,231],[287,231],[357,371],[357,441]];
     let leftArray = [[77,91],[147,91],[147,231],[77,301],[217,161],[287,161],[357,301],[427,301],[287,441],[357,441]];
 
-
-
     switch(e.keyCode){
 
-        case 37:  // если нажата клавиша влево
+        case 37:  
             if(left > 21){
                 for (let i = 0; i < leftArray.length; i++){
                     if(leftArray[i][0] === top && leftArray[i][1] === left){
@@ -29,7 +27,7 @@ function moveBoy(e){
                 boy.src = './images/boy-left.png';
             }
             break;
-        case 38:   // если нажата клавиша вверх
+        case 38:  
             if(top > 35){
                 for (let i = 0; i < topArray.length; i++){
                     if(topArray[i][0] === top && topArray[i][1] === left){
@@ -41,7 +39,7 @@ function moveBoy(e){
                 boy.src = './images/boy-back.png';
             }
             break;
-        case 39:   // если нажата клавиша вправо
+        case 39:  
             if( left < 380){
                 for (let i = 0; i < rightArray.length; i++){
                     if(rightArray[i][0] === top && rightArray[i][1] === left){
@@ -53,7 +51,7 @@ function moveBoy(e){
                 circle.style.marginLeft = left + 70 + "px";
             }
             break;
-        case 40:   // если нажата клавиша вниз
+        case 40:  
             if(top < 380){
                 for (let i = 0; i < bottomArray.length; i++){
                     if(bottomArray[i][0] === top && bottomArray[i][1] === left){

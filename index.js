@@ -69,18 +69,3 @@ function moveBoy(e){
 }
 
 addEventListener("keydown", moveBoy);
-
-
-
-
-/***********************For labyrinth**************************/
-//
-// for (var i = 0; i < a.length; i++){
-//     if(topArray[i][0] === left && topArray[i][1] === top){
-//         boy.src = './images/boy-back.png';
-//         break;
-//      }
-//     else{
-//          circle.style.marginTop = top - 70 + "px";
-//     }
-// }

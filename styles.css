@@ -1,0 +1,101 @@
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.room-on-top{
+    position: relative;
+    width: 497px;
+    height: 493px;
+    background-image: url("./images/floor.png");
+    background-size: 500px 500px;
+}
+
+.border-horizontal{
+    position: absolute;
+    height: 6px;
+    background-color: red;
+}
+
+#border-horizontal-1{
+    top: 72px;
+    left: 77px;
+    width: 211px;
+}
+
+#border-horizontal-2{
+    top: 141px;
+    left: 215px;
+    width: 71px;
+}
+
+#border-horizontal-3{
+    top: 210px;
+    left: 77px;
+    width: 71px;
+}
+
+#border-horizontal-4{
+    top: 280px;
+    left: 147px;
+    width: 141px;
+}
+
+#border-horizontal-5{
+    top: 350px;
+    left: 217px;
+    width: 71px;
+}
+
+#border-horizontal-6{
+    top: 420px;
+    left: 356px;
+    width: 141px;
+}
+
+.border-vertical{
+    position: absolute;
+    width: 6px;
+    background-color: red;
+}
+
+#border-vertical-1{
+    top: 73px;
+    left: 76px;
+    height: 140px;
+}
+
+#border-vertical-2{
+    top: 73px;
+    left: 284px;
+    height: 72px;
+}
+
+#border-vertical-3{
+    top: 141px;
+    left: 214px;
+    height: 72px;
+}
+
+#border-vertical-4{
+    top: 212px;
+    left: 145px;
+    height: 140px;
+}
+
+#border-vertical-5{
+    top: 350px;
+    left: 285px;
+    height: 142px;
+}
+
+#border-vertical-6{
+    top: 283px;
+    left: 425px;
+    height: 140px;
+}
+
+#circle {
+    margin-top: 7px;
+    margin-left: 21px;
+}
